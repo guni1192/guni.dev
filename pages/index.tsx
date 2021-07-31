@@ -3,6 +3,7 @@ import About from '../components/About'
 import Links from '../components/Links'
 import Background from '../components/Background'
 import Publish from '../components/Publish'
+import Status from '../components/Status'
 import { events } from '../lib/Events'
 import { postsData } from '../lib/Posts'
 
@@ -14,6 +15,7 @@ export default function Home() {
       <Links />
       <Background events={events} />
       <Publish postsData={postsData} />
+      <Status />
     </Layout>
   )
 }
