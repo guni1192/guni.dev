@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react'
 import Head from 'next/head'
+import styles from '../styles/Layout.module.css'
 
 type Props = {
   children?: ReactNode
@@ -15,7 +16,9 @@ const Layout = ({ children, title = 'guni1192' }: Props) => (
     </Head>
     <header>
     </header>
+    <main className={styles.main}>
     {children}
+    </main>
     <footer>
     </footer>
   </div>
