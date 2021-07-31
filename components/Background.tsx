@@ -9,7 +9,7 @@ const Background = ({ events }: [Event]) => (
   <div>
     <h2>Backgroud</h2>
     <ul>
-      { events.map((event) => <li><Career date={event.date} event={event.body} /></li>) }
+      { events.map((event) => <li><Career date={event.date} body={event.body} /></li>) }
     </ul>
   </div>
 )

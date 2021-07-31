@@ -1,11 +1,8 @@
-type Props = {
-  date: Date,
-  event: string
-}
+import { Event } from '../lib/Events'
 
-const Career = ({ date, event }: Props) => (
+const Career = ({ date, body }: Event) => (
   <div>
-    {date.getFullYear()}年{date.getMonth()}月: {event}
+    {date.getFullYear()}年{date.getMonth()}月: { body }
   </div>
 )
 
