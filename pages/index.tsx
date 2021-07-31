@@ -4,7 +4,7 @@ import Links from '../components/Links'
 import Background from '../components/Background'
 import Publish from '../components/Publish'
 import Status from '../components/Status'
-import { events } from '../lib/Events'
+import { academicBackGroundData, internshipBackGroundData } from '../lib/Events'
 import { postsData } from '../lib/Posts'
 
 export default function Home() {
@@ -13,7 +13,8 @@ export default function Home() {
       <h1>Who is guni1192 ?</h1>
       <About />
       <Links />
-      <Background events={events} />
+      <Background title="Background" events={academicBackGroundData} />
+      <Background title="Internship" events={internshipBackGroundData} />
       <Publish postsData={postsData} />
       <Status />
     </Layout>

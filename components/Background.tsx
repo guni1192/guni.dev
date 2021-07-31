@@ -2,18 +2,18 @@ import { Event } from "../lib/Events";
 import Career from './Career';
 
 type Props = {
+  title: string,
   events: Event[]
 }
 
-const Background = ({ events }: Props ) => (
+const Background = ({ title, events }: Props ) => (
   <div>
-    <h2>Backgroud</h2>
+    <h2>{title}</h2>
     <ul>
       {
-        events.map((event) =>
-        <li key={event.id}>
+        events.map((event, index) =>
+        <li key={index}>
           <Career
-            id={event.id}
             date={event.date}
             body={event.body} />
         </li>)
