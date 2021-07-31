@@ -2,7 +2,9 @@ import Layout from '../components/Layout'
 import About from '../components/About'
 import Links from '../components/Links'
 import Background from '../components/Background'
+import Publish from '../components/Publish'
 import { events } from '../lib/Events'
+import { postsData } from '../lib/Posts'
 
 export default function Home() {
   return (
@@ -11,6 +13,7 @@ export default function Home() {
       <About />
       <Links />
       <Background events={events} />
+      <Publish postsData={postsData} />
     </Layout>
   )
 }
