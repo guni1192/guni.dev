@@ -4,7 +4,7 @@ type Props = {}
 
 const About = ({  }: Props) => (
   <div>
-    <Image 
+    <Image
       src="/guni-icon.png"
       width={250}
       height={250}
