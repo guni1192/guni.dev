@@ -1,6 +1,4 @@
-import React, { ReactNode } from 'react'
 import Link from 'next/link'
-
 
 type Props = {}
 
