@@ -1,4 +1,4 @@
 module.exports = {
   reactStrictMode: true,
-  images: {loader: 'imgix'},
+  images: {unoptimized: true},
 }
