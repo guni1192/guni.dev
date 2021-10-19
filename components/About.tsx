@@ -3,17 +3,14 @@ import { ImageLoaderProps } from 'next/image'
 
 type Props = {}
 
-const cloudflareImageLoader = ({ src, width, quality }: ImageLoaderProps) => {
-  if (!quality) {
-    quality = 75
-  }
-  return `https://images.guni1192-com.workers.dev?width=${width}&quality=${quality}&image=https://guni1192.com${src}`
+const githubAvatorLoader = ({src, width, quality}: ImageLoaderProps) => {
+  return `https://github.com/guni1192.png`
 }
 
 const About = ({  }: Props) => (
   <div>
     <Image
-      loader={cloudflareImageLoader}
+      loader={githubAvatorLoader}
       src="/guni-icon.png"
       width={250}
       height={250}
