@@ -21,6 +21,7 @@ const Layout = ({ children, title = 'guni1192' }: Props) => (
     </main>
     <footer>
     </footer>
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "ec84c158e40e46cc99cc9db7be9be876"}'></script>
   </div>
 )
 
