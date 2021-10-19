@@ -1,10 +1,19 @@
 import Image from 'next/image'
+import { ImageLoaderProps } from 'next/image'
 
 type Props = {}
+
+const cloudflareImageLoader = ({ src, width, quality }: ImageLoaderProps) => {
+  if (!quality) {
+    quality = 75
+  }
+  return `https://images.guni1192-com.workers.dev?width=${width}&quality=${quality}&image=https://guni1192.com${src}`
+}
 
 const About = ({  }: Props) => (
   <div>
     <Image
+      loader={cloudflareImageLoader}
       src="/guni-icon.png"
       width={250}
       height={250}
