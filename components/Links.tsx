@@ -1,5 +1,6 @@
-import { Link } from '@chakra-ui/react'
+import { Link, Heading } from '@chakra-ui/react'
 import { SitesProps } from '../lib/Sites'
+
 
 type Props = {
   sitesData: SitesProps[]
@@ -7,7 +8,7 @@ type Props = {
 
 const Links = ({ sitesData }: Props) => (
   <div>
-    <h2>Links</h2>
+  <Heading as="h2" size="3xl">Links</Heading>
     <ul>
       {
         sitesData.map(({title, url}: SitesProps, index: number) =>
