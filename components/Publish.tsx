@@ -1,5 +1,6 @@
 import { Posts } from '../lib/Posts'
 import Article from './Article'
+import { Heading } from '@chakra-ui/react'
 
 type Props = {
   postsData: Posts[]
@@ -7,7 +8,7 @@ type Props = {
 
 const Publish = ({ postsData }: Props) => (
   <div>
-    <h2>Publish</h2>
+    <Heading as="h2" size="xl">Publish</Heading>
     <ul>
       {
         postsData.map((posts) =>

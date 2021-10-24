@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import { Link } from '@chakra-ui/react'
 import { Posts } from '../lib/Posts'
 
 const Article = ({ title, url }: Posts ) => (

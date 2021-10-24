@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { ImageLoaderProps } from 'next/image'
+import { Heading } from '@chakra-ui/react'
 
 type Props = {}
 
@@ -11,10 +12,11 @@ function imgLoader(ghUserName: string, theme: string) {
 
 const Status= ({}: Props) => (
   <div>
-    <h2>Status</h2>
+    <Heading as="h2" size="xl">Status</Heading>
     <Image
       loader={imgLoader("guni1192","gotham")}
       src="stats.png"
+      alt="guni1192_avator"
       width={500}
       height={200}
       />
