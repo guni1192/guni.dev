@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import { Link } from '@chakra-ui/react'
 import { SitesProps } from '../lib/Sites'
 
 type Props = {
