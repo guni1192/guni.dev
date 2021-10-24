@@ -14,8 +14,8 @@ const Links = ({ sitesData }: Props) => (
   <HStack p="20px">
       {
         sitesData.map(({title, url, icon, colorScheme}: SitesProps, index: number) =>
-          <Button colorScheme="green" leftIcon={React.createElement(icon)}>
-            <Link key={index} href={url}>
+          <Button key={index} colorScheme="green" leftIcon={React.createElement(icon, {}, [])}>
+            <Link href={url}>
               <a>{title}</a>
             </Link>
             </Button>

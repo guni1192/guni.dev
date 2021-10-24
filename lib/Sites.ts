@@ -1,9 +1,10 @@
+import React from 'react'
 import {FaBlog, FaGithub, FaLinkedin, FaSpeakerDeck, FaTwitter} from 'react-icons/fa'
 
 export type SitesProps = {
     title: string,
     url: string,
-    icon: React.Component,
+    icon: string|React.FunctionComponent<{}>|React.ComponentClass<{}, any>,
     colorScheme: string
 }
 
@@ -24,18 +25,18 @@ export const sitesData: SitesProps[] = [
         title: 'Blog',
         url: 'https://guni1192.hatenablog.com',
         icon: FaBlog,
-        colorscheme: 'orange'
+        colorScheme: 'orange'
     },
     {
         title: 'Linkedin',
         url: 'https://www.linkedin.com/in/takashi-iiguni',
         icon: FaLinkedin,
-        colorscheme: 'linkedin'
+        colorScheme: 'linkedin'
     },
     {
         title: 'SpeakerDeck',
         url: 'https://speakerdeck.com/guni1192',
         icon: FaSpeakerDeck,
-        colorscheme: 'cyan'
+        colorScheme: 'cyan'
     },
 ]

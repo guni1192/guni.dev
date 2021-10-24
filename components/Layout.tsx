@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react'
 import Head from 'next/head'
 import styles from '../styles/Layout.module.css'
 import { ColorModeScript } from "@chakra-ui/react"
-import theme from "../pages/theme"
+import { theme } from "../lib/theme"
 
 type Props = {
   children?: ReactNode

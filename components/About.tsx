@@ -17,6 +17,7 @@ const About = ({  }: Props) => (
       height={250}
       alt="icon"
     />
+
     <Heading as="h2" size="xl">About me</Heading>
     <Text fontsize="xl" p="10">
       My name is Takashi Iiguni (飯國 隆志). <br/>
