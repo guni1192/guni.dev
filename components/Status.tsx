@@ -16,6 +16,7 @@ const Status= ({}: Props) => (
     <Image
       loader={imgLoader("guni1192","gotham")}
       src="stats.png"
+      alt="guni1192_avator"
       width={500}
       height={200}
       />

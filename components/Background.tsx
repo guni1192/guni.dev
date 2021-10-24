@@ -23,14 +23,14 @@ const Background = ({ title, events }: Props ) => (
     <Table variant="simple">
       <Thead>
         <Tr>
-          <Th>Year</Th>
+          <Th>Date</Th>
           <Th>Event</Th>
         </Tr>
       </Thead>
       <Tbody>
         {
           events.map((event, index) =>
-          <Tr>
+          <Tr key={event.id}>
             <Td>{event.date.getFullYear()}年{event.date.getMonth() + 1}月</Td>
             <Td>{event.body}</Td>
           </Tr>)
