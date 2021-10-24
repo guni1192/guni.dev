@@ -1,12 +1,41 @@
+import {FaBlog, FaGithub, FaLinkedin, FaSpeakerDeck, FaTwitter} from 'react-icons/fa'
+
 export type SitesProps = {
-  title: string,
-  url: string,
+    title: string,
+    url: string,
+    icon: React.Component,
+    colorScheme: string
 }
 
 export const sitesData: SitesProps[] = [
-  {title: 'GitHub', url: 'https://github.com/guni1192'},
-  {title: 'Twitter', url: 'https://twitter.com/guni1192'},
-  {title: 'Blog', url: 'https://guni1192.hatenablog.com'},
-  {title: 'Linkedin', url: 'https://www.linkedin.com/in/takashi-iiguni'},
-  {title: 'SpeakerDeck', url: 'https://speakerdeck.com/guni1192'},
+    {
+        title: 'GitHub',
+        url: 'https://github.com/guni1192',
+        icon: FaGithub,
+        colorScheme: 'blackAlpha'
+    },
+    {
+        title: 'Twitter',
+        url: 'https://twitter.com/guni1192',
+        icon: FaTwitter,
+        colorScheme: 'twitter'
+    },
+    {
+        title: 'Blog',
+        url: 'https://guni1192.hatenablog.com',
+        icon: FaBlog,
+        colorscheme: 'orange'
+    },
+    {
+        title: 'Linkedin',
+        url: 'https://www.linkedin.com/in/takashi-iiguni',
+        icon: FaLinkedin,
+        colorscheme: 'linkedin'
+    },
+    {
+        title: 'SpeakerDeck',
+        url: 'https://speakerdeck.com/guni1192',
+        icon: FaSpeakerDeck,
+        colorscheme: 'cyan'
+    },
 ]

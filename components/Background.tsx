@@ -19,7 +19,7 @@ type Props = {
 
 const Background = ({ title, events }: Props ) => (
   <div>
-    <Heading as="h2" size="3xl">{title}</Heading>
+    <Heading as="h2" size="xl">{title}</Heading>
     <Table variant="simple">
       <Thead>
         <Tr>
@@ -30,7 +30,7 @@ const Background = ({ title, events }: Props ) => (
       <Tbody>
         {
           events.map((event, index) =>
-          <Tr key={event.id}>
+          <Tr key={index}>
             <Td>{event.date.getFullYear()}年{event.date.getMonth() + 1}月</Td>
             <Td>{event.body}</Td>
           </Tr>)

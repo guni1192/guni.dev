@@ -12,7 +12,7 @@ function imgLoader(ghUserName: string, theme: string) {
 
 const Status= ({}: Props) => (
   <div>
-    <Heading as="h2" size="3xl">Status</Heading>
+    <Heading as="h2" size="xl">Status</Heading>
     <Image
       loader={imgLoader("guni1192","gotham")}
       src="stats.png"

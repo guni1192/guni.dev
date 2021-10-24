@@ -8,7 +8,7 @@ type Props = {
 
 const Publish = ({ postsData }: Props) => (
   <div>
-    <Heading as="h2" size="3xl">Publish</Heading>
+    <Heading as="h2" size="xl">Publish</Heading>
     <ul>
       {
         postsData.map((posts) =>
