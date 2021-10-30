@@ -14,9 +14,9 @@ const Links = ({ sitesData }: Props) => (
   <Wrap p="20px" m="auto">
       {
         sitesData.map(({title, url, icon, colorScheme}: SitesProps, index: number) =>
-            <WrapItem>
+            <WrapItem key={index}>
               <Link href={url}>
-                <Button as="a" key={index} colorScheme="green" leftIcon={React.createElement(icon, {}, [])}>
+                <Button as="a" colorScheme="green" leftIcon={React.createElement(icon, {}, [])}>
                {title}
                 </Button>
               </Link>
