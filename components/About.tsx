@@ -19,7 +19,7 @@ const About = ({  }: Props) => (
     />
 
     <Heading as="h2" size="xl">About me</Heading>
-    <Text fontsize="xl" p="10">
+    <Text fontSize="xl" p="10">
       My name is Takashi Iiguni (飯國 隆志). <br/>
       I am a graduate student in Japan majoring in engineering. <br/>
       My area of expertise is system software, including virtualization technology and operating systems. <br/>
