@@ -1,4 +1,4 @@
-import { Link, Heading, Button, HStack } from '@chakra-ui/react'
+import { Link, Heading, Button, Wrap, WrapItem} from '@chakra-ui/react'
 import { SitesProps } from '../lib/Sites'
 import { FaTwitter } from 'react-icons/fa'
 import React from 'react'
@@ -11,17 +11,19 @@ const Links = ({ sitesData }: Props) => (
   <div>
   <Heading as="h2" size="xl">Links</Heading>
 
-  <HStack p="20px">
+  <Wrap p="20px" m="auto">
       {
         sitesData.map(({title, url, icon, colorScheme}: SitesProps, index: number) =>
-          <Button key={index} colorScheme="green" leftIcon={React.createElement(icon, {}, [])}>
-            <Link href={url}>
-              <a>{title}</a>
-            </Link>
-            </Button>
+            <WrapItem key={index}>
+              <Link href={url}>
+                <Button as="a" colorScheme="green" leftIcon={React.createElement(icon, {}, [])}>
+               {title}
+                </Button>
+              </Link>
+            </WrapItem>
           )
       }
-  </HStack>
+  </Wrap>
   </div>
 )
 
