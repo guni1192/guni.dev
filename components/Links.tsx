@@ -16,7 +16,7 @@ const Links = ({ sitesData }: Props) => (
         sitesData.map(({title, url, icon, colorScheme}: SitesProps, index: number) =>
             <WrapItem key={index}>
               <Link href={url}>
-                <Button as="a" colorScheme="green" leftIcon={React.createElement(icon, {}, [])}>
+                <Button as="a" href={url} colorScheme="green" leftIcon={React.createElement(icon, {}, [])}>
                {title}
                 </Button>
               </Link>
