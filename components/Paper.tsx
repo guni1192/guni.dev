@@ -14,7 +14,7 @@ const Papers = ({ title, papersData }: Props ) => (
       {
         papersData.map((paper: Paper, index) =>
         <ListItem key={index}>
-          {paper.authors.join(', ')}, "{paper.title}", {paper.conference}
+          {paper.authors.join(', ')}, &ldquo;{paper.title}&ldquo;, {paper.conference}
         </ListItem>)
       }
     </OrderedList>
