@@ -11,10 +11,7 @@ const githubAvatorLoader = ({src, width, quality}: ImageLoaderProps) => {
 const About = ({  }: Props) => (
   <div>
     <Image
-      loader={githubAvatorLoader}
-      src="/guni-icon.png"
-      width={250}
-      height={250}
+      src="https://github.com/guni1192.png"
       alt="icon"
     />
 
