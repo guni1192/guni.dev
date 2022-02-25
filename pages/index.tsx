@@ -3,10 +3,12 @@ import About from '../components/About'
 import Links from '../components/Links'
 import Background from '../components/Background'
 import Publish from '../components/Publish'
+import Paper from '../components/Paper'
 import Status from '../components/Status'
 import { Container, Stack, Box, Heading } from '@chakra-ui/react'
 import { academicBackGroundData, internshipBackGroundData } from '../lib/Events'
 import { postsData } from '../lib/Posts'
+import { papersData } from '../lib/Papers'
 import { sitesData } from '../lib/Sites'
 
 export default function Home() {
@@ -28,6 +30,9 @@ export default function Home() {
       </Stack>
       <Stack as={Box} >
         <Publish postsData={postsData} />
+      </Stack>
+      <Stack as={Box} >
+        <Paper title="Academic Papers" papersData={papersData} />
       </Stack>
       <Stack as={Box} >
         <Status />
