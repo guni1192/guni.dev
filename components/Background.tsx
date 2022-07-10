@@ -17,6 +17,12 @@ type Props = {
   events: Event[]
 }
 
+function getMonth(date: Date): string {
+  const month: number = date.getMonth() + 1;
+  const zeroPaddingMonth = ("00" + month).slice(-2);
+  return zeroPaddingMonth;
+}
+
 const Background = ({ title, events }: Props ) => (
   <div>
     <Heading as="h2" size="xl">{title}</Heading>
@@ -31,7 +37,7 @@ const Background = ({ title, events }: Props ) => (
         {
           events.map((event, index) =>
           <Tr key={index}>
-            <Td>{event.date.getFullYear()}年{event.date.getMonth() + 1}月</Td>
+            <Td>{event.date.getFullYear()}-{getMonth(event.date)} </Td>
             <Td>{event.body}</Td>
           </Tr>)
         }
