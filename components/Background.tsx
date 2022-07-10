@@ -1,6 +1,5 @@
 import { Event } from "../lib/Events";
 import { Heading, Text, VStack, Box } from '@chakra-ui/react'
-import Career from './Career';
 import {
   Table,
   Thead,
