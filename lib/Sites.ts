@@ -28,6 +28,12 @@ export const sitesData: SitesProps[] = [
         colorScheme: 'orange'
     },
     {
+        title: 'Tech Blog',
+        url: 'https://blog.guni1192.com',
+        icon: FaBlog,
+        colorScheme: 'orange'
+    },
+    {
         title: 'Linkedin',
         url: 'https://www.linkedin.com/in/takashi-iiguni',
         icon: FaLinkedin,
