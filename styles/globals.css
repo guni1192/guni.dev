@@ -19,5 +19,6 @@ a {
 h1, h2 {
   color: #0AE894;
   margin: 10px;
-  padding: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
