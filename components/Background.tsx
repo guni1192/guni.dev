@@ -1,6 +1,5 @@
 import { Event } from "../lib/Events";
-import { Heading } from '@chakra-ui/react'
-import Career from './Career';
+import { Heading, Text, VStack, Box } from '@chakra-ui/react'
 import {
   Table,
   Thead,
@@ -17,26 +16,29 @@ type Props = {
   events: Event[]
 }
 
+function getMonth(date: Date): string {
+  const month: number = date.getMonth() + 1;
+  const zeroPaddingMonth = ("00" + month).slice(-2);
+  return zeroPaddingMonth;
+}
+
 const Background = ({ title, events }: Props ) => (
   <div>
     <Heading as="h2" size="xl">{title}</Heading>
-    <Table variant="simple">
-      <Thead>
-        <Tr>
-          <Th>Date</Th>
-          <Th>Event</Th>
-        </Tr>
-      </Thead>
-      <Tbody>
+    <VStack
+      spacing={4}
+      align='stretch'
+      >
         {
-          events.map((event, index) =>
-          <Tr key={index}>
-            <Td>{event.date.getFullYear()}年{event.date.getMonth() + 1}月</Td>
-            <Td>{event.body}</Td>
-          </Tr>)
+          events.sort((a: Event, b: Event) => (a.endDate < b.endDate)? 1 : -1).map((event, index) =>
+          <Box key={index}>
+            <Heading as="h3" size="md">{event.name}</Heading>
+            <Text fontSize="xs">{event.startDate.getFullYear()}-{getMonth(event.startDate)}  - {event.endDate.getFullYear()}-{getMonth(event.endDate)} </Text>
+            <Text>{event.body}</Text>
+            </Box>
+            )
         }
-      </Tbody>
-    </Table>
+    </VStack>
   </div>
 )
 
