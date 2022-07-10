@@ -1,27 +1,27 @@
-// import Image from 'next/image'
 import { ImageLoaderProps } from 'next/image'
-import { Heading, Text, Image } from '@chakra-ui/react'
+import { Heading, Text, Image, Box, Flex} from '@chakra-ui/react'
 
 type Props = {}
 
-const githubAvatorLoader = ({src, width, quality}: ImageLoaderProps) => {
-  return `https://github.com/guni1192.png`
-}
-
 const About = ({  }: Props) => (
-  <div>
-    <Image
-      src="https://github.com/guni1192.png"
-      alt="icon"
-    />
+  <Flex>
+    <Box p={2}>
+      <Image
+        src="https://github.com/guni1192.png"
+        alt="icon"
+      />
+      </Box>
 
-    <Heading as="h2" size="xl">About me</Heading>
-    <Text fontSize="xl" p="10">
-      My name is Takashi Iiguni (飯國 隆志). <br/>
-      I am a graduate student in Japan majoring in engineering. <br/>
-      My area of expertise is system software, including virtualization technology and operating systems. <br/>
-    </Text>
-  </div>
+    <Box p={2}>
+      <Heading as="h2" size="xl">About me</Heading>
+      <Text fontSize="xl">
+        Hi, I&apos;m Takashi Iiguni (飯國 隆志). <br/>
+        Software Engineer experience 0+ years.
+        I have a Master of Engineering.
+        I&apos;m interested in Container, Kubernetes, eBPF, Rust.
+      </Text>
+    </Box>
+  </Flex>
 )
 
 export default About;
