@@ -4,9 +4,9 @@ import { Heading, Text, Image, Box, Flex} from '@chakra-ui/react'
 type Props = {}
 
 const About = ({  }: Props) => (
-  <Box p={2}>
+  <Box>
     <Heading as="h2" size="xl">About me</Heading>
-    <Text fontSize="xl">
+    <Text fontSize="xl" p={4}>
       Hi, I&apos;m Takashi Iiguni (飯國 隆志). <br/>
       Software Engineer experience 0+ years.
       I have a Master of Engineering.

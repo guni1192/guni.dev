@@ -1,4 +1,4 @@
-import { Heading, OrderedList, ListItem } from "@chakra-ui/react"
+import { Heading, OrderedList, ListItem, Box } from "@chakra-ui/react"
 
 import { Paper } from "../lib/Papers";
 
@@ -8,9 +8,9 @@ type Props = {
 }
 
 const Papers = ({ title, papersData }: Props ) => (
-  <div>
+  <Box>
     <Heading as="h2" size="xl">{title}</Heading>
-    <OrderedList>
+    <OrderedList p={4}>
       {
         papersData.map((paper: Paper, index) =>
         <ListItem key={index}>
@@ -18,7 +18,7 @@ const Papers = ({ title, papersData }: Props ) => (
         </ListItem>)
       }
     </OrderedList>
-  </div>
+  </Box>
 )
 
 export default Papers;

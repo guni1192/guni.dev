@@ -15,8 +15,7 @@ export default function Home() {
   return (
     <Layout title="Takashi Iiguni profile">
       <Container maxW={'6xl'}>
-      <Heading as="h1" size="4xl">Takashi Iiguni</Heading>
-
+      <Heading as="h1" size="4xl" p={4}>Takashi Iiguni</Heading>
       <Stack as={Box}>
         <Icon />
       </Stack>

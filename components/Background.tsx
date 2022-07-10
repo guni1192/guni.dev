@@ -28,6 +28,7 @@ const Background = ({ title, events }: Props ) => (
     <VStack
       spacing={4}
       align='stretch'
+      p={4}
       >
         {
           events.sort((a: Event, b: Event) => (a.endDate < b.endDate)? 1 : -1).map((event, index) =>
