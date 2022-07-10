@@ -4,6 +4,7 @@ import Links from '../components/Links'
 import Background from '../components/Background'
 import Publish from '../components/Publish'
 import Paper from '../components/Paper'
+import Icon from '../components/Icon'
 import { Container, Stack, Box, Heading } from '@chakra-ui/react'
 import { backgroundData } from '../lib/Events'
 import { postsData } from '../lib/Posts'
@@ -13,10 +14,16 @@ import { sitesData } from '../lib/Sites'
 export default function Home() {
   return (
     <Layout title="Takashi Iiguni profile">
-      <Container maxW={'3xl'}>
-      <Heading as="h1" size="4xl" m="auto" p="20px">Takashi Iiguni</Heading>
-      <Stack as={Box} >
+      <Container maxW={'6xl'}>
+      <Heading as="h1" size="4xl">Takashi Iiguni</Heading>
+
+      <Stack as={Box}>
+        <Icon />
+      </Stack>
+      <Stack as={Box}>
         <About />
+      </Stack>
+      <Stack as={Box} >
       </Stack>
       <Stack as={Box} >
         <Links sitesData={sitesData} />
