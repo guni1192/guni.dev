@@ -12,9 +12,9 @@ import { sitesData } from '../lib/Sites'
 
 export default function Home() {
   return (
-    <Layout title="Top | guni1192.com">
+    <Layout title="Takashi Iiguni profile">
       <Container maxW={'3xl'}>
-      <Heading as="h1" size="4xl" m="auto" p="20px">$ whois guni1192</Heading>
+      <Heading as="h1" size="4xl" m="auto" p="20px">Takashi Iiguni</Heading>
       <Stack as={Box} >
         <About />
       </Stack>
