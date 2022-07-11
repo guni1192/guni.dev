@@ -10,12 +10,12 @@ type Props = {
 }
 
 const Layout = ({ children, title = 'guni1192' }: Props) => (
-  <div>
+  <html lang="en">
     <Head>
       <title>{title}</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <meta name="description" content="Takashi Iiguni is a Japanese software developer" />
+      <meta name="description" content="Software Engineer" />
     </Head>
     <body>
     <header>
@@ -28,7 +28,7 @@ const Layout = ({ children, title = 'guni1192' }: Props) => (
     </footer>
     <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "ec84c158e40e46cc99cc9db7be9be876"}'></script>
     </body>
-  </div>
+  </html>
 )
 
 export default Layout
