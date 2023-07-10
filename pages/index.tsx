@@ -11,6 +11,8 @@ import { postsData } from '../lib/Posts'
 import { papersData } from '../lib/Papers'
 import { sitesData } from '../lib/Sites'
 
+export const runtime = 'edge';
+
 export default function Home() {
   return (
     <Layout title="Takashi Iiguni profile">
