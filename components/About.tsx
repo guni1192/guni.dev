@@ -8,7 +8,7 @@ const About = ({  }: Props) => (
     <Heading as="h2" size="xl">About me</Heading>
     <Text fontSize="xl" p={4}>
       Hi, I&apos;m <b>Takashi Iiguni (飯國 隆志)</b>. 
-      Software Engineer experience 0+ years. 
+      Software Engineer experience 1+ years. 
       I have a Master of Engineering. 
       I&apos;m interested in Container, Kubernetes, eBPF, Rust.
     </Text>
