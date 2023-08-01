@@ -1,13 +1,13 @@
 export class Event {
   startDate: Date;
-  endDate: Date;
+  endDate: Date | null;
   name: string;
   body: string;
 
-  constructor(startDate: string, endDate: string, name: string, body?: string) {
+  constructor(startDate: string, endDate: string | null, name: string, body?: string) {
     this.startDate = new Date(startDate);
-    if (endDate === '') {
-      this.endDate = new Date();
+    if (endDate === null) {
+      this.endDate = null;
     } else {
       this.endDate = new Date(endDate);
     }
@@ -24,5 +24,5 @@ export const backgroundData: Event[] =
       new Event('2020-04', '2022-03', 'Kagawa University, Faculty of Engineering, Division of Reliability-based Information Systems Engineering', 'Saisho Laboratory'),
       new Event('2020-08', '2020-08', 'Cybozu, inc. Internship', 'Cloud Platform Engineer'),
       new Event('2020-09', '2020-09', 'Yahoo Japan Corporation Internship', ''),
-      new Event('2022-04', '', 'NTT Communications', 'Software Engineer'),
+      new Event('2022-04', null, 'NTT Communications', 'Software Engineer'),
     ]
