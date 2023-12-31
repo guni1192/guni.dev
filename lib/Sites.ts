@@ -23,13 +23,7 @@ export const sitesData: SitesProps[] = [
     },
     {
         title: 'Blog',
-        url: 'https://guni1192.hatenablog.com',
-        icon: FaBlog,
-        colorScheme: 'orange'
-    },
-    {
-        title: 'Tech Blog',
-        url: 'https://blog.guni1192.com',
+        url: 'https://blog.guni.dev',
         icon: FaBlog,
         colorScheme: 'orange'
     },
