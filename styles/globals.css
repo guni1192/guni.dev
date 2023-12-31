@@ -15,9 +15,12 @@ a {
   box-sizing: border-box;
 }
 
-h1, h2 {
+h1 {
   color: #0AE894;
   margin: 10px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+}
+
+h2 {
+  color: #0AE894;
+  padding: 5px;
 }

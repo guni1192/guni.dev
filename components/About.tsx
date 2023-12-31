@@ -4,13 +4,12 @@ import { Heading, Text, Image, Box, Flex} from '@chakra-ui/react'
 type Props = {}
 
 const About = ({  }: Props) => (
-  <Box p={2}>
+  <Box>
     <Heading as="h2" size="xl">About me</Heading>
     <Text fontSize="xl" p={4}>
-      Hi, I&apos;m <b>Takashi Iiguni (飯國 隆志)</b>. 
-      Software Engineer experience 1+ years. 
-      I have a Master of Engineering. 
-      I&apos;m interested in Container, Kubernetes, eBPF, Rust.
+      Hello, I&apos;m <b>Takashi Iiguni (飯國 隆志)</b>, a Japanese software engineer with a Master&apos;s degree in Engineering.
+      My professional focus is on DevOps, containerization, CI/CD, eBPF, and Rust.
+      Passionate about innovation in technology, I constantly seek to deepen my expertise in these areas, contributing to efficient and reliable software development processes.
     </Text>
   </Box>
 )

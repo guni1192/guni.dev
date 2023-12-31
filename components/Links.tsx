@@ -1,4 +1,4 @@
-import { Link, Heading, Button, Wrap, WrapItem} from '@chakra-ui/react'
+import { Link, Heading, Button, Wrap, WrapItem, Box } from '@chakra-ui/react'
 import { SitesProps } from '../lib/Sites'
 import { FaTwitter } from 'react-icons/fa'
 import React from 'react'
@@ -8,7 +8,7 @@ type Props = {
 }
 
 const Links = ({ sitesData }: Props) => (
-  <div>
+  <Box>
   <Heading as="h2" size="xl">Links</Heading>
 
   <Wrap p="20px" m="auto">
@@ -24,7 +24,7 @@ const Links = ({ sitesData }: Props) => (
           )
       }
   </Wrap>
-  </div>
+  </Box>
 )
 
 export default Links;

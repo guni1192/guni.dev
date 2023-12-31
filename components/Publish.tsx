@@ -1,15 +1,15 @@
 import { Posts } from '../lib/Posts'
 import Article from './Article'
-import { Heading, OrderedList, ListItem } from '@chakra-ui/react'
+import { Heading, OrderedList, ListItem, Box } from '@chakra-ui/react'
 
 type Props = {
   postsData: Posts[]
 }
 
 const Publish = ({ postsData }: Props) => (
-  <div>
+  <Box>
     <Heading as="h2" size="xl">Publish</Heading>
-    <OrderedList>
+    <OrderedList pl="20px">
       {
         postsData.map((posts) =>
         <ListItem  key={posts.url}>
@@ -19,7 +19,7 @@ const Publish = ({ postsData }: Props) => (
         </ListItem>)
       }
     </OrderedList>
-  </div>
+  </Box>
 )
 
 export default Publish;
