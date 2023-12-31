@@ -24,5 +24,5 @@ export const backgroundData: Event[] =
       new Event('2020-04', '2022-03', 'Kagawa University, Faculty of Engineering, Division of Reliability-based Information Systems Engineering', 'Saisho Laboratory'),
       new Event('2020-08', '2020-08', 'Cybozu, inc. Internship', 'Cloud Platform Engineer'),
       new Event('2020-09', '2020-09', 'Yahoo Japan Corporation Internship', ''),
-      new Event('2022-04', null, 'NTT Communications', 'Software Engineer'),
+      new Event('2022-04', '2023-12', 'NTT Communications', 'Software Engineer'),
     ]
