@@ -5,7 +5,7 @@ import Background from '../components/Background'
 import Publish from '../components/Publish'
 import Paper from '../components/Paper'
 import Icon from '../components/Icon'
-import { Container, Stack, Box, Heading } from '@chakra-ui/react'
+import { Flex, Container, Stack, Box, Heading } from '@chakra-ui/react'
 import { backgroundData } from '../lib/Events'
 import { postsData } from '../lib/Posts'
 import { papersData } from '../lib/Papers'
@@ -17,12 +17,11 @@ export default function Home() {
       <Container maxW={'6xl'}>
       <Heading as="h1" size="4xl">Takashi Iiguni</Heading>
 
-      <Stack as={Box}>
+      <Stack as={Box} direction="row" alignItems="center">
         <Icon />
-      </Stack>
-      <Stack as={Box}>
         <About />
       </Stack>
+
       <Stack as={Box} >
       </Stack>
       <Stack as={Box} >
