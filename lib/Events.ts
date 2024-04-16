@@ -25,4 +25,5 @@ export const backgroundData: Event[] =
       new Event('2020-08', '2020-08', 'Cybozu, inc. Internship', 'Cloud Platform Engineer'),
       new Event('2020-09', '2020-09', 'Yahoo Japan Corporation Internship', ''),
       new Event('2022-04', '2023-12', 'NTT Communications', 'Software Engineer'),
+      new Event('2024-01', null, 'Ubie, inc.', 'Software Engineer (SRE)'),
     ]
