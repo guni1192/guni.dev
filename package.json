@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@types/node": "20.16.13",
-    "@types/react": "18.3.11",
+    "@types/react": "18.3.12",
     "eslint": "7.32.0",
     "eslint-config-next": "^14.0.0",
     "react-icons": "^5.0.0",
