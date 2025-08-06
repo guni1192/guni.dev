@@ -5,7 +5,6 @@ import Background from '../components/Background'
 import Publish from '../components/Publish'
 import Paper from '../components/Paper'
 import Icon from '../components/Icon'
-import { Flex, Container, Stack, Box, Heading } from '@chakra-ui/react'
 import { backgroundData } from '../lib/Events'
 import { postsData } from '../lib/Posts'
 import { papersData } from '../lib/Papers'
@@ -14,29 +13,30 @@ import { sitesData } from '../lib/Sites'
 export default function Home() {
   return (
     <Layout title="Takashi Iiguni profile">
-      <Container maxW={'6xl'}>
-      <Heading as="h1" size="4xl">Takashi Iiguni</Heading>
+      <div className="container">
+        <h1 className="main-title">Takashi Iiguni</h1>
 
-      <Stack as={Box} direction="row" alignItems="center">
-        <Icon />
-        <About />
-      </Stack>
+        <div className="profile-section">
+          <Icon />
+          <About />
+        </div>
 
-      <Stack as={Box} >
-      </Stack>
-      <Stack as={Box} >
-        <Links sitesData={sitesData} />
-      </Stack>
-      <Stack as={Box} >
-        <Background title="Background" events={backgroundData} />
-      </Stack>
-      <Stack as={Box} >
-        <Publish postsData={postsData} />
-      </Stack>
-      <Stack as={Box} >
-        <Paper title="Academic Papers" papersData={papersData} />
-      </Stack>
-      </Container>
+        <div className="section">
+          <Links sitesData={sitesData} />
+        </div>
+
+        <div className="section">
+          <Background title="Background" events={backgroundData} />
+        </div>
+
+        <div className="section">
+          <Publish postsData={postsData} />
+        </div>
+
+        <div className="section">
+          <Paper title="Academic Papers" papersData={papersData} />
+        </div>
+      </div>
     </Layout>
   )
 }

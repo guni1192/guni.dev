@@ -1,5 +1,3 @@
-import { Heading, OrderedList, ListItem, Box } from "@chakra-ui/react"
-
 import { Paper } from "../lib/Papers";
 
 type Props = {
@@ -8,17 +6,19 @@ type Props = {
 }
 
 const Papers = ({ title, papersData }: Props ) => (
-  <Box>
-    <Heading as="h2" size="xl">{title}</Heading>
-    <OrderedList pl="20px">
+  <div className="papers-section">
+    <h2 className="section-title">{title}</h2>
+    <ol className="papers-list">
       {
         papersData.map((paper: Paper, index) =>
-        <ListItem key={index}>
-          {paper.authors.join(', ')}, &ldquo;{paper.title}&ldquo;, {paper.conference}
-        </ListItem>)
+        <li key={index} className="paper-item">
+          <p className="paper-text">
+            {paper.authors.join(', ')}, &ldquo;{paper.title}&ldquo;, {paper.conference}
+          </p>
+        </li>)
       }
-    </OrderedList>
-  </Box>
+    </ol>
+  </div>
 )
 
 export default Papers;

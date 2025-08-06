@@ -1,14 +1,15 @@
-import { Image, Box } from '@chakra-ui/react'
+import { ImageLoaderProps } from 'next/image'
 
 type Props = {}
 
 const Icon = ({  }: Props) => (
-  <Box>
-    <Image
+  <div className="icon-container">
+    <img
       src="https://github.com/guni1192.png"
       alt="guni1192"
+      className="profile-icon"
     />
-  </Box>
+  </div>
 )
 
 export default Icon;
