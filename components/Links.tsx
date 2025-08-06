@@ -1,4 +1,3 @@
-import { Link, Heading, Button, Wrap, WrapItem, Box } from '@chakra-ui/react'
 import { SitesProps } from '../lib/Sites'
 import { FaTwitter } from 'react-icons/fa'
 import React from 'react'
@@ -8,23 +7,26 @@ type Props = {
 }
 
 const Links = ({ sitesData }: Props) => (
-  <Box>
-  <Heading as="h2" size="xl">Links</Heading>
+  <div className="links-section">
+    <h2 className="section-title">Links</h2>
 
-  <Wrap p="20px" m="auto">
+    <div className="links-container">
       {
         sitesData.map(({title, url, icon, colorScheme}: SitesProps, index: number) =>
-            <WrapItem key={index}>
-              <Link href={url}>
-                <Button as="a" href={url} colorScheme="green" leftIcon={React.createElement(icon, {}, [])}>
-               {title}
-                </Button>
-              </Link>
-            </WrapItem>
+            <a 
+              key={index}
+              href={url}
+              className="link-button"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {React.createElement(icon, {}, [])}
+              <span>{title}</span>
+            </a>
           )
       }
-  </Wrap>
-  </Box>
+    </div>
+  </div>
 )
 
 export default Links;
