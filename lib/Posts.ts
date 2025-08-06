@@ -12,4 +12,8 @@ export const postsData: Posts[] = [
     title: 'Rust no_stdで作るコンテナ',
     url: 'https://speakerdeck.com/guni1192/rust-no-stddezuo-rukontena-6ed09e39-83e2-4218-8d96-3b7e59dd5aec'
   },
+  {
+    title: '[SRE NEXT 2025] SRE へのサポートケースをAIに管理させる方法',
+    url: 'https://speakerdeck.com/guni1192/sre-henosapotokesuwoainiguan-li-saserufang-fa',
+  }
 ]
