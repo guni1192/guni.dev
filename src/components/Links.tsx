@@ -1,18 +1,17 @@
-import { SitesProps } from '../lib/Sites'
-import { FaTwitter } from 'react-icons/fa'
 import React from 'react'
+import { SitesProps } from '../lib/Sites'
 
 type Props = {
   sitesData: SitesProps[]
 }
 
-const Links = ({ sitesData }: Props) => (
+const Links: React.FC<Props> = ({ sitesData }) => (
   <div className="links-section">
     <h2 className="section-title">Links</h2>
 
     <div className="links-container">
       {
-        sitesData.map(({title, url, icon, colorScheme}: SitesProps, index: number) =>
+        sitesData.map(({title, url, icon}: SitesProps, index: number) =>
             <a 
               key={index}
               href={url}
@@ -29,4 +28,4 @@ const Links = ({ sitesData }: Props) => (
   </div>
 )
 
-export default Links;
+export default Links

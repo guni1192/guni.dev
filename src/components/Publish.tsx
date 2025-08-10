@@ -1,3 +1,4 @@
+import React from 'react'
 import { Posts } from '../lib/Posts'
 import Article from './Article'
 
@@ -5,7 +6,7 @@ type Props = {
   postsData: Posts[]
 }
 
-const Publish = ({ postsData }: Props) => (
+const Publish: React.FC<Props> = ({ postsData }) => (
   <div className="publish-section">
     <h2 className="section-title">Publish</h2>
     <ol className="posts-list">
@@ -21,4 +22,4 @@ const Publish = ({ postsData }: Props) => (
   </div>
 )
 
-export default Publish;
+export default Publish

@@ -1,8 +1,6 @@
-import { ImageLoaderProps } from 'next/image'
+import React from 'react'
 
-type Props = {}
-
-const Icon = ({  }: Props) => (
+const Icon: React.FC = () => (
   <div className="icon-container">
     <img
       src="https://github.com/guni1192.png"
@@ -12,4 +10,4 @@ const Icon = ({  }: Props) => (
   </div>
 )
 
-export default Icon;
+export default Icon

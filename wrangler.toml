@@ -1,0 +1,10 @@
+name = "guni-dev"
+compatibility_date = "2023-10-30"
+
+[env.production]
+account_id = ""
+route = "guni.dev"
+
+[build]
+command = "npm run build"
+publish = "dist"

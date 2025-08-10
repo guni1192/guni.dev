@@ -1,6 +1,7 @@
+import React from 'react'
 import { Posts } from '../lib/Posts'
 
-const Article = ({ title, url }: Posts ) => (
+const Article: React.FC<Posts> = ({ title, url }) => (
   <a 
     href={url} 
     className="article-link"
@@ -11,4 +12,4 @@ const Article = ({ title, url }: Posts ) => (
   </a>
 )
 
-export default Article;
+export default Article

@@ -4,7 +4,7 @@ import {FaBlog, FaGithub, FaLinkedin, FaSpeakerDeck, FaTwitter} from 'react-icon
 export type SitesProps = {
     title: string,
     url: string,
-    icon: string|React.FunctionComponent<{}>|React.ComponentClass<{}, any>,
+    icon: React.ComponentType,
     colorScheme: string
 }
 
