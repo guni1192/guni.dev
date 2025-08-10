@@ -1,4 +1,5 @@
 import React from 'react'
+import { Box, Heading, List } from '@chakra-ui/react'
 import { Posts } from '../lib/Posts'
 import Article from './Article'
 
@@ -7,19 +8,21 @@ type Props = {
 }
 
 const Publish: React.FC<Props> = ({ postsData }) => (
-  <div className="publish-section">
-    <h2 className="section-title">Publish</h2>
-    <ol className="posts-list">
+  <Box>
+    <Heading as="h2" size={{ base: "lg", md: "xl" }} mb={{ base: 3, md: 4 }} color="green.400">
+      Publish
+    </Heading>
+    <List.Root as="ol" pl={{ base: "15px", md: "20px" }} gap={{ base: 2, md: 3 }}>
       {
         postsData.map((posts) =>
-        <li key={posts.url} className="post-item">
+        <List.Item key={posts.url}>
           <Article
             title={posts.title}
             url={posts.url} />
-        </li>)
+        </List.Item>)
       }
-    </ol>
-  </div>
+    </List.Root>
+  </Box>
 )
 
 export default Publish

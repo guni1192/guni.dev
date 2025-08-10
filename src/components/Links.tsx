@@ -1,4 +1,5 @@
 import React from 'react'
+import { Box, Heading, Flex, Button, Link } from '@chakra-ui/react'
 import { SitesProps } from '../lib/Sites'
 
 type Props = {
@@ -6,26 +7,35 @@ type Props = {
 }
 
 const Links: React.FC<Props> = ({ sitesData }) => (
-  <div className="links-section">
-    <h2 className="section-title">Links</h2>
+  <Box>
+    <Heading as="h2" size={{ base: "lg", md: "xl" }} mb={{ base: 3, md: 4 }} color="green.400">
+      Links
+    </Heading>
 
-    <div className="links-container">
+    <Flex gap={{ base: 2, md: 3 }} wrap="wrap">
       {
         sitesData.map(({title, url, icon}: SitesProps, index: number) =>
-            <a 
-              key={index}
-              href={url}
-              className="link-button"
-              target="_blank"
-              rel="noopener noreferrer"
+          <Link 
+            key={index}
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            textDecoration="none"
+          >
+            <Button 
+              colorScheme="green"
+              size={{ base: "sm", md: "md" }}
             >
-              {React.createElement(icon, {}, [])}
-              <span>{title}</span>
-            </a>
-          )
+              <Box mr={2}>
+                {React.createElement(icon)}
+              </Box>
+              {title}
+            </Button>
+          </Link>
+        )
       }
-    </div>
-  </div>
+    </Flex>
+  </Box>
 )
 
 export default Links

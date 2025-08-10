@@ -1,4 +1,5 @@
 import React from 'react'
+import { Box, Heading, List, Text } from '@chakra-ui/react'
 import { Paper } from "../lib/Papers"
 
 type Props = {
@@ -7,19 +8,21 @@ type Props = {
 }
 
 const Papers: React.FC<Props> = ({ title, papersData }) => (
-  <div className="papers-section">
-    <h2 className="section-title">{title}</h2>
-    <ol className="papers-list">
+  <Box>
+    <Heading as="h2" size={{ base: "lg", md: "xl" }} mb={{ base: 3, md: 4 }} color="green.400">
+      {title}
+    </Heading>
+    <List.Root as="ol" pl={{ base: "15px", md: "20px" }} gap={{ base: 2, md: 3 }}>
       {
         papersData.map((paper: Paper, index) =>
-        <li key={index} className="paper-item">
-          <p className="paper-text">
+        <List.Item key={index}>
+          <Text fontSize={{ base: "sm", md: "md" }} lineHeight={{ base: "1.4", md: "1.6" }}>
             {paper.authors.join(', ')}, &ldquo;{paper.title}&rdquo;, {paper.conference}
-          </p>
-        </li>)
+          </Text>
+        </List.Item>)
       }
-    </ol>
-  </div>
+    </List.Root>
+  </Box>
 )
 
 export default Papers
