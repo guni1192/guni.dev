@@ -14,8 +14,8 @@
     "@chakra-ui/react": "^3.24.2",
     "@chakra-ui/system": "^2.6.2",
     "@emotion/react": "^11.14.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
     "react-icons": "^5.0.0",
     "react-router-dom": "^6.26.0"
   },
