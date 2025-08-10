@@ -1,4 +1,5 @@
-import { Event } from "../lib/Events";
+import React from 'react'
+import { Event } from "../lib/Events"
 
 type Props = {
   title: string,
@@ -18,7 +19,7 @@ function dateToString(date: Date | null): string {
   return date.getFullYear() + '/' + getMonth(date)
 }
 
-const Background = ({ title, events }: Props ) => (
+const Background: React.FC<Props> = ({ title, events }) => (
   <div className="background-section">
     <h2 className="section-title">{title}</h2>
     <div className="events-container">

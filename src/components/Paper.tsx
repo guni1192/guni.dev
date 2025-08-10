@@ -1,11 +1,12 @@
-import { Paper } from "../lib/Papers";
+import React from 'react'
+import { Paper } from "../lib/Papers"
 
 type Props = {
   title: string
   papersData: Paper[]
 }
 
-const Papers = ({ title, papersData }: Props ) => (
+const Papers: React.FC<Props> = ({ title, papersData }) => (
   <div className="papers-section">
     <h2 className="section-title">{title}</h2>
     <ol className="papers-list">
@@ -13,7 +14,7 @@ const Papers = ({ title, papersData }: Props ) => (
         papersData.map((paper: Paper, index) =>
         <li key={index} className="paper-item">
           <p className="paper-text">
-            {paper.authors.join(', ')}, &ldquo;{paper.title}&ldquo;, {paper.conference}
+            {paper.authors.join(', ')}, &ldquo;{paper.title}&rdquo;, {paper.conference}
           </p>
         </li>)
       }
@@ -21,4 +22,4 @@ const Papers = ({ title, papersData }: Props ) => (
   </div>
 )
 
-export default Papers;
+export default Papers

@@ -1,8 +1,6 @@
-import { ImageLoaderProps } from 'next/image'
+import React from 'react'
 
-type Props = {}
-
-const About = ({  }: Props) => (
+const About: React.FC = () => (
   <div className="about">
     <h2 className="section-title">About me</h2>
     <p className="about-text">
@@ -13,4 +11,4 @@ const About = ({  }: Props) => (
   </div>
 )
 
-export default About;
+export default About
