@@ -12,7 +12,7 @@ const Links: React.FC<Props> = ({ sitesData }) => (
       Links
     </Heading>
 
-    <Flex gap={{ base: 2, md: 3 }} wrap="wrap">
+    <Flex pl={{ base: 4, md: 6 }} gap={{ base: 2, md: 3 }} wrap="wrap">
       {
         sitesData.map(({title, url, icon}: SitesProps, index: number) =>
           <Link 
