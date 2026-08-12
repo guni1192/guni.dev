@@ -18,19 +18,21 @@ const Home: React.FC = () => {
 
   return (
     <Container maxW="6xl" px={{ base: 4, md: 6 }} py={{ base: 6, md: 8 }}>
-      <Heading as="h1" size={{ base: "2xl", md: "4xl" }} mb={{ base: 6, md: 8 }} color="green.400">
-        Takashi Iiguni
-      </Heading>
-
-      <Stack 
-        direction={{ base: "column", md: "row" }} 
-        alignItems={{ base: "flex-start", md: "center" }}
+      <Stack
+        direction="row"
+        alignItems="center"
         gap={{ base: 4, md: 6 }}
-        mb={{ base: 8, md: 10 }}
+        mb={{ base: 6, md: 8 }}
       >
         <Icon />
-        <About />
+        <Heading as="h1" size={{ base: "2xl", md: "4xl" }} color="green.400">
+          Takashi Iiguni
+        </Heading>
       </Stack>
+
+      <Box mb={{ base: 8, md: 10 }}>
+        <About />
+      </Box>
 
       <Box mb={{ base: 8, md: 10 }}>
         <Links sitesData={sitesData} />
