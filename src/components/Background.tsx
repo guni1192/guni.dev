@@ -25,7 +25,7 @@ const Background: React.FC<Props> = ({ title, events }) => (
     <Heading as="h2" size={{ base: "lg", md: "xl" }} mb={{ base: 3, md: 4 }} color="green.400">
       {title}
     </Heading>
-    <VStack gap={{ base: 3, md: 4 }} align="stretch">
+    <VStack pl={{ base: 4, md: 6 }} gap={{ base: 3, md: 4 }} align="stretch">
       {
         events.sort((a: Event, b: Event) => (a.startDate < b.startDate)? 1 : -1).map((event, index) =>
         <Box 

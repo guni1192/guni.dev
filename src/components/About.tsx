@@ -7,6 +7,7 @@ const About: React.FC = () => (
       About me
     </Heading>
     <Text
+      pl={{ base: 4, md: 6 }}
       fontSize={{ base: "md", md: "xl" }}
       lineHeight={{ base: "1.6", md: "1.8" }}
     >
